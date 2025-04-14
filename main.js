@@ -1,6 +1,8 @@
 secret_mode = false
 users = [['a123', '1234'], ['test', 'no test']]
 
+alert('a')
+
 function secret() {
 	if(Pword.value == '12345') {
 		if(confirm('Activate secret mode?')) {
