@@ -34,8 +34,9 @@ function test2(a) {
 function form() {
 	if([name, password] in users) {
 		alert('Name and password correct')
+		return true
 	} else {
 		alert('Name or password no correct!')
-		console.error('Name or password no correct!')
+		return false
 	}
 }
