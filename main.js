@@ -40,3 +40,16 @@ function form() {
 		return false
 	}
 }
+
+function interval1() {
+	var counter = 0
+	id = setInterval(interval, 1000)
+	
+	function interval() {
+		counter++
+		console.log('timer:', counter)
+		if(counter > 9) {
+			clearInterval(id)
+		}
+	}
+}
