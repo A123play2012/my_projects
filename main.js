@@ -1,4 +1,5 @@
 secret_mode = false
+users = [['a123', '1234'], ['test', 'no test']]
 
 function secret() {
 	if(Pword.value == '12345') {
@@ -28,4 +29,13 @@ function text1() {
 
 function test2(a) {
 	a.innerHTML = '<address>No text2</address>'
+}
+
+function form() {
+	if([name, password] in users) {
+		alert('Name and password correct')
+	} else {
+		alert('Name or password no correct!')
+		console.error('Name or password no correct!')
+	}
 }
